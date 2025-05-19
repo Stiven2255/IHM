@@ -1,0 +1,216 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(249, 249, 230);
+  color: #333;
+  line-height: 1.6;
+}
+
+.inicio {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.inicio h1 {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.inicio h1:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #e74c3c, #f39c12);
+}
+
+.inicio p {
+  font-size: 1.05rem;
+  text-align: center;
+  margin: 0 auto 2rem;
+  color: #555;
+  max-width: 700px;
+  padding: 0 1rem;
+}
+
+.image-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.inicio img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  object-fit: cover;
+}
+
+.inicio img:first-of-type {
+  max-height: 350px;
+  object-position: center 30%;
+}
+
+.inicio img:last-of-type {
+  max-height: 280px;
+  object-position: center;
+}
+
+.inicio img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.benefits-section {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  margin: 3rem 0;
+}
+
+.benefits-section h2 {
+  font-size: 1.6rem;
+  color: #e74c3c;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.benefits-section h2:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 2px;
+  background-color: #f39c12;
+}
+
+.benefits-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+  padding: 0;
+  list-style: none;
+}
+
+.benefits-list li {
+  padding: 1rem 1rem 1rem 2.5rem;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.benefits-list li:hover {
+  background-color: #fff;
+  transform: translateX(5px);
+  box-shadow: 2px 0 10px rgba(0,0,0,0.05);
+}
+
+.benefits-list li:before {
+  content: '✓';
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  color: #27ae60;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.discounts-section {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.discounts-section h2 {
+  font-size: 1.6rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.discounts-section h2:after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #3498db, #9b59b6);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section-animate {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@media (max-width: 768px) {
+  .inicio {
+    padding: 1.5rem 1rem;
+  }
+  
+  .inicio h1 {
+    font-size: 1.8rem;
+  }
+  
+  .inicio p {
+    font-size: 1rem;
+    padding: 0;
+  }
+  
+  .benefits-section {
+    padding: 1.5rem;
+  }
+  
+  .benefits-list li {
+    padding: 0.8rem 0.8rem 0.8rem 2.2rem;
+  }
+  
+  .inicio img:first-of-type {
+    max-height: 250px;
+  }
+  
+  .inicio img:last-of-type {
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .inicio h1 {
+    font-size: 1.6rem;
+  }
+  
+  .benefits-section h2,
+  .discounts-section h2 {
+    font-size: 1.4rem;
+  }
+}
