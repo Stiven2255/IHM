@@ -27,9 +27,9 @@ export default function CompAPi() {
       },
       {
         headers: {
-          Authorization: `BBearer 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`, // Reemplázala con tu clave real
+          Authorization: `BBearer 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`, // Reemplázala con tu clave real
           "Content-Type": "application/json",
-          "X-Title": "AstronautGPT",
+          "X-Title": "ViGo AI",
         },
       }
     );
