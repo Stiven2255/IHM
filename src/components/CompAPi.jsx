@@ -27,7 +27,7 @@ export default function CompAPi() {
       },
       {
         headers: {
-          Authorization: `BBearer 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`, // Reemplázala con tu clave real
+          Authorization: `BBearer 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`,
           "Content-Type": "application/json",
           "X-Title": "ViGo AI",
         },
